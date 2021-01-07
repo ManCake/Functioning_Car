@@ -3,7 +3,7 @@
 import sys
 import tkinter
 
-#Car brand/make/year/speed
+# Car brand/make/year/speed
 
 class car:
     def __init__(self, brand, make, year):
@@ -30,3 +30,13 @@ class car:
 
     def brake(self):
         self.speed -= 10
+
+def car():
+    print("What car would you like to drive?")
+    car_brand = input("Car Brand: ")
+    car_model = input("Car Model: ")
+    car_year = input("Car Year: ")
+    print("Is", car_brand, car_model, car_year, "your car of choice?")
+
+# Program Flow
+car()
