@@ -36,7 +36,28 @@ def car():
     car_brand = input("Car Brand: ")
     car_model = input("Car Model: ")
     car_year = input("Car Year: ")
-    print("Is", car_brand, car_model, car_year, "your car of choice?")
+    def car_of_choice():
+        print("Is", car_brand, car_model, car_year, "your car of choice? ")
+        yes_no = input()
+
+        if yes_no == "y":
+            pass
+
+        elif yes_no == "n":
+            car()
+
+        else:
+            print("Invalid!")
+            car_of_choice()
+
+    car_of_choice()
+    def road():
+        print("+ to accelerate  | - to brake")
+        pedal = input()
+
+        if pedal == "+":
+            car_of_choice == ""
+        
 
 # Program Flow
 car()
